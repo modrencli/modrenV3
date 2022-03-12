@@ -567,6 +567,7 @@ lock_bots = lock_bots,
 lock_spam = lock_spam
 }
 end
+function Total_message(Message)  
 local MsgText = ''  
 if tonumber(Message) < 100 then 
 MsgText = 'غير متفاعل😔??' 
@@ -597,6 +598,7 @@ MsgText = 'Good PRo ⚡'
 end 
 return MsgText 
 end
+
 function Getpermissions(ChatId)
 local Get_Chat = LuaTele.getChat(ChatId)
 if Get_Chat.permissions.can_add_web_page_previews then
