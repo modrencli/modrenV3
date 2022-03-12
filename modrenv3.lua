@@ -156,7 +156,7 @@ Distinguished = Redis:sismember(Themodrenv3.."modrenv3:Distinguished:Group"..Cha
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if UserId == 5054014137 then
 Status = 'مطور السورس'
-elseif UserId == 5193454129 then
+elseif UserId == 5054014137 then
 Status = 'مطور السورس'
 elseif UserId == Sudo_Id then  
 Status = 'المطور الاساسي'
@@ -567,34 +567,33 @@ lock_bots = lock_bots,
 lock_spam = lock_spam
 }
 end
-function Total_message(Message)  
 local MsgText = ''  
 if tonumber(Message) < 100 then 
-MsgText = 'تفاعل محلو 😤' 
+MsgText = 'غير متفاعل😔??' 
 elseif tonumber(Message) < 200 then 
-MsgText = 'تفاعلك ضعيف ليش'
+MsgText = 'رايدله مولده🤣😜😕💔' 
 elseif tonumber(Message) < 400 then 
-MsgText = 'عفيه اتفاعل 😽' 
+MsgText = 'شبه متفاعل😗👻' 
 elseif tonumber(Message) < 700 then 
-MsgText = 'شكد تحجي😒' 
+MsgText = 'متفاعل😍🙊' 
 elseif tonumber(Message) < 1200 then 
-MsgText = 'ملك التفاعل 😼' 
+MsgText = 'متفاعل قوي😍✔️' 
 elseif tonumber(Message) < 2000 then 
-MsgText = 'موش تفاعل غنبله' 
+MsgText = 'متفاعل جدا😍💘' 
 elseif tonumber(Message) < 3500 then 
-MsgText = 'اساس لتفاعل ياب'  
+MsgText = 'اقوى تفاعل🙊👻'  
 elseif tonumber(Message) < 4000 then 
-MsgText = 'عوف لجواهر وتفاعل بزودك' 
+MsgText = 'متفاعل نار😍🔥' 
 elseif tonumber(Message) < 4500 then 
-MsgText = 'قمة التفاعل' 
+MsgText = 'قمة التفاعل🤸‍♂️😻' 
 elseif tonumber(Message) < 5500 then 
-MsgText = 'شهلتفاعل استمر يكيك' 
+MsgText = 'اقوى متفاعل😳😻' 
 elseif tonumber(Message) < 7000 then 
-MsgText = 'غنبله وربي 🌟' 
+MsgText = 'ملك التفاعل🤴😍' 
 elseif tonumber(Message) < 9500 then 
-MsgText = 'حلغوم مال تفاعل' 
+MsgText = 'امبروطور التفاعل💂‍♀️😻' 
 elseif tonumber(Message) < 10000000000 then 
-MsgText = 'تفاعل نار وشرار'  
+MsgText = 'Good PRo ⚡'
 end 
 return MsgText 
 end
@@ -716,11 +715,11 @@ else
 UserInfousername = '['..UserInfo.first_name..'](tg://user?id='..UserId..')'
 end
 return {
-Lock     = '[MoDreN](https://t.me/vv_sv7)\n*— — — — — — — — —\n🛡 ¦ بواسطه » *'..UserInfousername..'\n*'..TextMsg..'\n🛡 ¦ خاصيه المسح *',
+Lock     = '[MoDreN](https://t.me/ke565)\n*— — — — — — — — —\n🛡 ¦ بواسطه » *'..UserInfousername..'\n*'..TextMsg..'\n🛡 ¦ خاصيه المسح *',
 unLock   = '[MoDreN](https://t.me/ke565)\n*— — — — — — — — —\n🛡 ¦ بواسطه » *'..UserInfousername..'\n'..TextMsg,
-lockKtm  = '[MoDreN](https://t.me/vv_sv7)\n*— — — — — — — — —\n🛡 ¦ بواسطه » *'..UserInfousername..'\n*'..TextMsg..'\n🛡 ¦ خاصيه الكتم *',
+lockKtm  = '[MoDreN](https://t.me/ke565)\n*— — — — — — — — —\n🛡 ¦ بواسطه » *'..UserInfousername..'\n*'..TextMsg..'\n🛡 ¦ خاصيه الكتم *',
 lockKid  = '[MoDreN](https://t.me/ke565)\n*— — — — — — — — —\n🛡 ¦ بواسطه » *'..UserInfousername..'\n*'..TextMsg..'\n🛡 ¦ خاصيه التقييد *',
-lockKick = '[MoDreN](https://t.me/vv_sv7)\n*— — — — — — — — —\n🛡 ¦ بواسطه » *'..UserInfousername..'\n*'..TextMsg..'\n🛡 ¦ خاصيه الطرد *',
+lockKick = '[MoDreN](https://t.me/ke565)\n*— — — — — — — — —\n🛡 ¦ بواسطه » *'..UserInfousername..'\n*'..TextMsg..'\n🛡 ¦ خاصيه الطرد *',
 Reply    = '[MoDreN](https://t.me/ke565)\n*— — — — — — — — —\n🛡 ¦ المستخدم » *'..UserInfousername..'\n*'..TextMsg..'*'
 }
 end
@@ -904,7 +903,7 @@ end
 if tonumber(msg.sender.user_id) == 5054014137 then
 msg.Name_Controller = 'مطور السورس '
 msg.The_Controller = 1
-elseif tonumber(msg.sender.user_id) == 5193454129 then
+elseif tonumber(msg.sender.user_id) == 5054014137 then
 msg.Name_Controller = 'مطور السورس '
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender.user_id) == true then  
@@ -1805,7 +1804,7 @@ return LuaTele.sendText(msg_chat_id,msg_id,"🛡 ¦ تم حذف الرد من ر
 end
 end
 if Redis:get(Themodrenv3.."modrenv3:Broadcasting:Groups:Pin" .. msg_chat_id .. ":" .. msg.sender.user_id) then 
-if text == "الغاء" or text == 'الغاء الامر ⌔' then   
+if text == "الغاء" or text == 'الغاء الامر ⚡' then   
 Redis:del(Themodrenv3.."modrenv3:Broadcasting:Groups:Pin" .. msg_chat_id .. ":" .. msg.sender.user_id) 
 return LuaTele.sendText(msg_chat_id,msg_id, "\n🛡 ¦ تم الغاء الاذاعه للمجموعات","md",true)  
 end 
@@ -1869,7 +1868,7 @@ return false
 end
 ------------------------------------------------------------------------------------------------------------
 if Redis:get(Themodrenv3.."modrenv3:Broadcasting:Users" .. msg_chat_id .. ":" .. msg.sender.user_id) then 
-if text == "الغاء" or text == 'الغاء الامر ⌔' then   
+if text == "الغاء" or text == 'الغاء الامر ⚡' then   
 Redis:del(Themodrenv3.."modrenv3:Broadcasting:Users" .. msg_chat_id .. ":" .. msg.sender.user_id) 
 return LuaTele.sendText(msg_chat_id,msg_id, "\n🛡 ¦ تم الغاء الاذاعه خاص","md",true)  
 end 
@@ -1924,7 +1923,7 @@ return false
 end
 ------------------------------------------------------------------------------------------------------------
 if Redis:get(Themodrenv3.."modrenv3:Broadcasting:Groups" .. msg_chat_id .. ":" .. msg.sender.user_id) then 
-if text == "الغاء" or text == 'الغاء الامر ⌔' then   
+if text == "الغاء" or text == 'الغاء الامر ⚡' then   
 Redis:del(Themodrenv3.."modrenv3:Broadcasting:Groups" .. msg_chat_id .. ":" .. msg.sender.user_id) 
 return LuaTele.sendText(msg_chat_id,msg_id, "\n🛡 ¦ تم الغاء الاذاعه للمجموعات","md",true)  
 end 
@@ -1979,7 +1978,7 @@ return false
 end
 ------------------------------------------------------------------------------------------------------------
 if Redis:get(Themodrenv3.."modrenv3:Broadcasting:Groups:Fwd" .. msg_chat_id .. ":" .. msg.sender.user_id) then 
-if text == "الغاء" or text == 'الغاء الامر ⌔' then   
+if text == "الغاء" or text == 'الغاء الامر ⚡' then   
 Redis:del(Themodrenv3.."modrenv3:Broadcasting:Groups:Fwd" .. msg_chat_id .. ":" .. msg.sender.user_id) 
 return LuaTele.sendText(msg_chat_id,msg_id, "\n🛡 ¦ تم الغاء الاذاعه بالتوجيه للمجموعات","md",true)    
 end 
@@ -1995,7 +1994,7 @@ return false
 end
 ------------------------------------------------------------------------------------------------------------
 if Redis:get(Themodrenv3.."modrenv3:Broadcasting:Users:Fwd" .. msg_chat_id .. ":" .. msg.sender.user_id) then 
-if text == "الغاء" or text == 'الغاء الامر ⌔' then   
+if text == "الغاء" or text == 'الغاء الامر ⚡' then   
 Redis:del(Themodrenv3.."modrenv3:Broadcasting:Users:Fwd" .. msg_chat_id .. ":" .. msg.sender.user_id) 
 return LuaTele.sendText(msg_chat_id,msg_id, "\n🛡 ¦ تم الغاء الاذاعه بالتوجيه خاص","md",true)    
 end 
@@ -2010,7 +2009,7 @@ end
 return false
 end
 if text and Redis:get(Themodrenv3..'modrenv3:GetTexting:DevThemodrenv3'..msg_chat_id..':'..msg.sender.user_id) then
-if text == 'الغاء' or text == 'الغاء الامر ⌔' then 
+if text == 'الغاء' or text == 'الغاء الامر ⚡' then 
 Redis:del(Themodrenv3..'modrenv3:GetTexting:DevThemodrenv3'..msg_chat_id..':'..msg.sender.user_id)
 return LuaTele.sendText(msg_chat_id,msg_id,'🛡 ¦ تم الغاء حفظ كليشة المطور')
 end
@@ -2046,14 +2045,14 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = '𝗠𝗔𝗧𝗥𝗜𝗫 ⁦', url='https://t.me/ke565'},
+{text = 'MoDreN ⁦', url='https://t.me/ke565'},
 },
 }
 }
 LuaTele.sendText(msg_chat_id,msg_id,'🛡 ¦ تم تعين الايدي الجديد',"md",true, false, false, false, reply_markup)
 end
 if Redis:get(Themodrenv3.."modrenv3:Change:Name:Bot"..msg.sender.user_id) then 
-if text == "الغاء" or text == 'الغاء الامر ⌔' then   
+if text == "الغاء" or text == 'الغاء الامر ⚡' then   
 Redis:del(Themodrenv3.."modrenv3:Change:Name:Bot"..msg.sender.user_id) 
 return LuaTele.sendText(msg_chat_id,msg_id, "\n🛡 ¦ تم الغاء امر تغير اسم البوت","md",true)  
 end 
@@ -2062,7 +2061,7 @@ Redis:set(Themodrenv3.."modrenv3:Name:Bot",text)
 return LuaTele.sendText(msg_chat_id,msg_id, "🛡 ¦  تم تغير اسم البوت الى - "..text,"md",true)    
 end 
 if Redis:get(Themodrenv3.."modrenv3:Change:Start:Bot"..msg.sender.user_id) then 
-if text == "الغاء" or text == 'الغاء الامر ⌔' then   
+if text == "الغاء" or text == 'الغاء الامر ⚡' then   
 Redis:del(Themodrenv3.."modrenv3:Change:Start:Bot"..msg.sender.user_id) 
 return LuaTele.sendText(msg_chat_id,msg_id, "\n🛡 ¦ تم الغاء امر تغير كليشه start","md",true)  
 end 
@@ -2262,7 +2261,7 @@ end
 end
 end
 if (Redis:get(Themodrenv3..'modrenv3:Channel:Redis'..msg_chat_id..':'..msg.sender.user_id) == 'true') then
-if text == 'الغاء' or text == 'الغاء الامر ⌔' then 
+if text == 'الغاء' or text == 'الغاء الامر ⚡' then 
 Redis:del(Themodrenv3..'modrenv3:Channel:Redis'..msg_chat_id..':'..msg.sender.user_id)
 return LuaTele.sendText(msg_chat_id,msg_id,'🛡 ¦ تم الغاء حفظ قناة الاشتراك')
 end
@@ -2286,28 +2285,28 @@ return LuaTele.sendText(msg_chat_id,msg_id,"\n🛡 ¦ هاذا ليس معرف �
 end
 end
 end
-if text == 'تفعيل الاشتراك الاجباري' or text == 'تفعيل الاشتراك الاجباري ⌔' then
+if text == 'تفعيل الاشتراك الاجباري' or text == 'تفعيل الاشتراك الاجباري ⚡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
 Redis:set(Themodrenv3..'modrenv3:Channel:Redis'..msg_chat_id..':'..msg.sender.user_id,true)
 return LuaTele.sendText(msg_chat_id,msg_id,"\n🛡 ¦ ارسل الي الان قناة الاشتراك ","md",true)  
 end
-if text == 'تعطيل الاشتراك الاجباري' or text == 'تعطيل الاشتراك الاجباري ⌔' then
+if text == 'تعطيل الاشتراك الاجباري' or text == 'تعطيل الاشتراك الاجباري ⚡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
 Redis:del(Themodrenv3..'modrenv3:Channel:Join')
 return LuaTele.sendText(msg_chat_id,msg_id,"\n🛡 ¦ تم تعطيل الاشتراك الاجباري","md",true)  
 end
-if text == 'تغيير الاشتراك الاجباري' or text == 'تغيير الاشتراك الاجباري ⌔' then
+if text == 'تغيير الاشتراك الاجباري' or text == 'تغيير الاشتراك الاجباري ⚡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
 Redis:set(Themodrenv3..'modrenv3:Channel:Redis'..msg_chat_id..':'..msg.sender.user_id,true)
 return LuaTele.sendText(msg_chat_id,msg_id,"\n🛡 ¦ ارسل الي الان قناة الاشتراك ","md",true)  
 end
-if text == 'الاشتراك الاجباري' or text == 'الاشتراك الاجباري ⌔' then
+if text == 'الاشتراك الاجباري' or text == 'الاشتراك الاجباري ⚡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -2318,7 +2317,7 @@ else
 return LuaTele.sendText(msg_chat_id,msg_id,"\n🛡 ¦ لا توجد قناة في الاشتراك ارسل تغيير الاشتراك الاجباري","md",true)  
 end
 end
-if text == 'تحديث السورس' or text == 'تحديث السورس ⌔' then
+if text == 'تحديث السورس' or text == 'تحديث السورس ⚡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -2400,14 +2399,14 @@ Informationlua:close()
 return LuaTele.sendText(msg_chat_id,msg_id,"\n 🛡 ¦  تم تغيير المطور الاساسي اصبح على : [@"..text:gsub('@','').."]","md",true)  
 end
 end
-if text == 'تغيير المطور الاساسي' or text == 'تغيير المطور الاساسي ⌔' then
+if text == 'تغيير المطور الاساسي' or text == 'تغيير المطور الاساسي ⚡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n* 🛡 ¦  هاذا الامر يخص 『 '..Controller_Num(1)..' 』* ',"md",true)  
 end
 Redis:set(Themodrenv3.."modrenv3:AddSudosNew"..msg_chat_id,true)
 return LuaTele.sendText(msg_chat_id,msg_id," 🛡 ¦  ارسل معرف المطور الاساسي مع @","md",true)
 end
-if text == 'جلب النسخه الاحتياطيه ⌔' or text == 'جلب نسخه احتياطيه' then
+if text == 'جلب النسخه الاحتياطيه ⚡' or text == 'جلب نسخه احتياطيه' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -2611,7 +2610,7 @@ return LuaTele.sendText(msg.chat_id,msg.id,'*\n🛡 ¦ عليك الاشتراك
 end
 Redis:set(Themodrenv3..'modrenv3:Num:Add:Bot',text:match("تعين عدد الاعضاء (%d+)$") ) 
 LuaTele.sendText(msg_chat_id,msg_id,'*🛡 ¦  تم تعيين عدد اعضاء تفعيل البوت اكثر من : '..text:match("تعين عدد الاعضاء (%d+)$")..' عضو *',"md",true)  
-elseif text =='الاحصائيات ⌔' then 
+elseif text =='الاحصائيات ⚡' then 
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -2850,7 +2849,7 @@ return LuaTele.sendPhoto(msg.chat_id, msg.id, photo.photos[1].sizes[#photo.photo
 '\n*🛡 ¦ '..Description..
 '\n🛡 ¦ ايديك : '..UserId..
 '\n🛡 ¦ معرفك : '..UserInfousername..
-'\n⌔‍ ¦ رتبتك : '..RinkBot..
+'\n⚡‍ ¦ رتبتك : '..RinkBot..
 '\n🛡 ¦ صورك : '..TotalPhoto..
 '\n🛡 ¦ رسائلك : '..TotalMsg..
 '\n🛡 ¦ تعديلاتك : '..TotalEdit..
@@ -2860,7 +2859,7 @@ else
 return LuaTele.sendText(msg_chat_id,msg_id,
 '\n*🛡 ¦ ايديك : '..UserId..
 '\n🛡 ¦ معرفك : '..UserInfousername..
-'\n⌔‍ ¦ رتبتك : '..RinkBot..
+'\n⚡‍ ¦ رتبتك : '..RinkBot..
 '\n🛡 ¦ رسائلك : '..TotalMsg..
 '\n🛡 ¦ تعديلاتك : '..TotalEdit..
 '\n🛡 ¦ تفاعلك : '..TotalMsgT..
@@ -2884,7 +2883,7 @@ else
 return LuaTele.sendText(msg_chat_id,msg_id,
 '\n*🛡 ¦ ايديك : '..UserId..
 '\n🛡 ¦ معرفك : '..UserInfousername..
-'\n⌔‍ ¦ رتبتك : '..RinkBot..
+'\n⚡‍ ¦ رتبتك : '..RinkBot..
 '\n🛡 ¦ رسائلك : '..TotalMsg..
 '\n🛡 ¦ تعديلاتك : '..TotalEdit..
 '\n🛡 ¦ تفاعلك : '..TotalMsgT..
@@ -2908,7 +2907,7 @@ local TotalMsgT = Total_message(TotalMsg)
 return LuaTele.sendText(msg_chat_id,msg_id,
 '\n*🛡 ¦ ايديه : '..UserId..
 '\n🛡 ¦ معرفه : '..UserInfousername..
-'\n⌔‍ ¦ رتبته : '..RinkBot..
+'\n⚡‍ ¦ رتبته : '..RinkBot..
 '\n🛡 ¦ رسائله : '..TotalMsg..
 '\n🛡 ¦ تعديلاته : '..TotalEdit..
 '\n🛡 ¦ تفاعله : '..TotalMsgT..
@@ -2934,7 +2933,7 @@ local TotalMsgT = Total_message(TotalMsg)
 return LuaTele.sendText(msg_chat_id,msg_id,
 '\n*🛡 ¦ ايديه : '..UserId..
 '\n🛡 ¦ معرفه : @'..UserName..
-'\n⌔‍ ¦ رتبته : '..RinkBot..
+'\n⚡‍ ¦ رتبته : '..RinkBot..
 '\n🛡 ¦ رسائله : '..TotalMsg..
 '\n🛡 ¦ تعديلاته : '..TotalEdit..
 '\n🛡 ¦ تفاعله : '..TotalMsgT..
@@ -3074,7 +3073,7 @@ if text == 'رتبتي' then
 local ban = LuaTele.getUser(msg.sender.user_id)
 local news = ' '..msg.Name_Controller
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {
-{{text =news,url = "https://t.me/vv_sv7"}, },}}
+{{text =news,url = "https://t.me/ke565"}, },}}
 return LuaTele.sendText(msg_chat_id,msg_id,'\n🛡 ¦ رتبتك هي : '..msg.Name_Controller,"md", false, false, false, false, reply_markup)
 end
 if text == 'ايديي' then
@@ -3143,8 +3142,8 @@ end
 return LuaTele.sendText(msg_chat_id,msg_id,
 '\n*🛡 ¦ ايديك : '..UserId..
 '\n🛡 ¦ معرفك : '..UserInfousername..
-'\n⌔‍ ¦ رتبتك : '..RinkBot..
-'\n⌔‍ ¦ رتبته المجموعه: '..StatusMemberChat..
+'\n⚡‍ ¦ رتبتك : '..RinkBot..
+'\n⚡‍ ¦ رتبته المجموعه: '..StatusMemberChat..
 '\n🛡 ¦ رسائلك : '..TotalMsg..
 '\n🛡 ¦ تعديلاتك : '..TotalEdit..
 '\n🛡 ¦ تفاعلك : '..TotalMsgT..
@@ -6665,7 +6664,7 @@ keyboard.inline_keyboard = {
 {text = ': مره اخرى 🔃.', callback_data = IdUser..'/Re@'},
 },
 {
-{text = '❲ MoDreN ❳',url="t.me/vv_sv7"}
+{text = '❲ MoDreN ❳',url="t.me/ke565"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -6676,7 +6675,7 @@ Abs = math.random(2,140);
 local Text ='*🛡 ¦ تم اختيار متحركه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❲ MoDreN ❳',url="t.me/vv_sv7"}},
+{{text = '❲ MoDreN ❳',url="t.me/ke565"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. msg.chat_id .. '&animation=https://t.me/GifDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -6696,7 +6695,7 @@ Abs = math.random(2,140);
 local Text ='*🛡 ¦ تم اختيار الموال لك فقط*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❲ MoDreN ❳',url="t.me/vv_sv7"}},
+{{text = '❲ MoDreN ❳',url="t.me/ke565"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/dar5555/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -6719,7 +6718,7 @@ local Text ='*🛡 ¦ تم اختيار الفلم لك*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ MoDreN ❳', url = "https://t.me/vv_sv7"}
+{text = '❲ MoDreN ❳', url = "https://t.me/ke565"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -6731,7 +6730,7 @@ local Text ='*🛡 ¦ تم اختيار انمي لك*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ MoDreN ❳', url = "https://t.me/vv_sv7"}
+{text = '❲ MoDreN ❳', url = "https://t.me/ke565"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -8347,7 +8346,7 @@ data = {
 {text = 'تعطيل الترحيب', data = msg.sender.user_id..'/'.. 'unmute_welcome'},{text = 'تفعيل الترحيب', data = msg.sender.user_id..'/'.. 'mute_welcome'},
 },
 {
-{text = 'اتعطيل الايدي', data = msg.sender.user_id..'/'.. 'unmute_Id'},{text = 'اتفعيل الايدي', data = msg.sender.user_id..'/'.. 'mute_Id'},
+{text = 'اتعطيل الايدي', data = msg.sender.user_id..'/'.. 'unmute_Id'},{text = 'تفعيل الايدي', data = msg.sender.user_id..'/'.. 'mute_Id'},
 },
 {
 {text = 'تعطيل الايدي بالصوره', data = msg.sender.user_id..'/'.. 'unmute_IdPhoto'},{text = 'تفعيل الايدي بالصوره', data = msg.sender.user_id..'/'.. 'mute_IdPhoto'},
@@ -8432,8 +8431,6 @@ local protectionGroup = '\n*🛡 ¦ اعدادات حمايه المجموعه\n
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
-{
-{text = '- قناة السورس', url = 't.me/ke565'}, 
 },
 }
 }
@@ -9367,7 +9364,7 @@ db = "صوره 🎇"
 elseif Redis:get(Themodrenv3.."modrenv3:Add:Rd:Manager:Video"..v..msg_chat_id) then
 db = "فيديو 📹"
 elseif Redis:get(Themodrenv3.."modrenv3:Add:Rd:Manager:File"..v..msg_chat_id) then
-db = "ملف ⌔"
+db = "ملف ⚡"
 elseif Redis:get(Themodrenv3.."modrenv3:Add:Rd:Manager:Audio"..v..msg_chat_id) then
 db = "اغنيه 🎵"
 elseif Redis:get(Themodrenv3.."modrenv3:Add:Rd:Manager:video_note"..v..msg_chat_id) then
@@ -9449,7 +9446,7 @@ db = "صوره 🎇"
 elseif Redis:get(Themodrenv3.."modrenv3:Add:Rd:Sudo:Video"..v) then
 db = "فيديو 📹"
 elseif Redis:get(Themodrenv3.."modrenv3:Add:Rd:Sudo:File"..v) then
-db = "ملف ⌔"
+db = "ملف ⚡"
 elseif Redis:get(Themodrenv3.."modrenv3:Add:Rd:Sudo:Audio"..v) then
 db = "اغنيه 🎵"
 elseif Redis:get(Themodrenv3.."modrenv3:Add:Rd:Sudo:video_note"..v) then
@@ -9790,7 +9787,7 @@ local TestText = "  ❲ MoDreN 𝖲𝗈𝗎𝗋𝖼𝖾 ❳\n— — — — —
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ MoDreN ❳', url = "https://t.me/vv_sv7"}
+{text = '❲ MoDreN ❳', url = "https://t.me/ke565"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -9895,9 +9892,6 @@ data = {
 {
 {text = 'Facebook', url = 'https://www.facebook.com/help/deleteaccount'},{text = 'Snapchat', url = 'https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount'}
 },
-{
-{text = '˛ MoDreN .', url = 't.me/ke565'}, 
-},
 }
 }
 return LuaTele.sendText(msg_chat_id,msg_id,'*🛡 ¦ رابط الحذف في جميع مواقع التواصل*',"md",false, false, false, false, reply_markup)
@@ -9914,21 +9908,12 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'قناة السوࢪس ،', url = 't.me/vv_sv7'}, 
-},
-{
-{text = 'شࢪوحات السوࢪس', url = 't.me/ke565'}, 
-},
-{
-{text = 'بوت التواصل', url = 't.me/OF4CBOT'}, 
-},
-{
-{text = ' مطوࢪ السوࢪس!', url = 't.me/ke565'}, 
+{text = 'قناة السوࢪس ،', url = 't.me/ke565'}, 
 },
 }
 }
 return LuaTele.sendText(msg_chat_id,msg_id, [[
-*⌔ ¦ Source modrenv3 *
+*⚡ ¦ Source MoDreN *
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 ]],"md",false, false, false, false, reply_markup)
 elseif text == 'الاوامر' then
@@ -9982,9 +9967,6 @@ data = {
 {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
-{
-{text = '- قناة السورس', url = 't.me/ke565'}, 
-},
 }
 }
 return LuaTele.sendText(msg_chat_id,msg_id,'🛡 ¦ عليك استخدام اوامر التحكم بالقوائم',"md",false, false, false, false, reply_markup)
@@ -10001,9 +9983,6 @@ type = 'inline',
 data = {
 {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
-},
-{
-{text = '- قناة السورس', url = 't.me/ke565'}, 
 },
 }
 }
@@ -10022,9 +10001,6 @@ data = {
 {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
-{
-{text = '- قناة السورس', url = 't.me/ke565'}, 
-},
 }
 }
 return LuaTele.sendText(msg_chat_id,msg_id,'🛡 ¦ عليك استخدام اوامر التحكم بالقوائم',"md",false, false, false, false, reply_markup)
@@ -10042,9 +10018,6 @@ data = {
 {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
-{
-{text = '- قناة السورس', url = 't.me/ke565'}, 
-},
 }
 }
 return LuaTele.sendText(msg_chat_id,msg_id,'🛡 ¦ عليك استخدام اوامر التحكم بالقوائم',"md",false, false, false, false, reply_markup)
@@ -10061,9 +10034,6 @@ type = 'inline',
 data = {
 {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
-},
-{
-{text = '- قناة السورس', url = 't.me/ke565'}, 
 },
 }
 }
@@ -10356,27 +10326,27 @@ end
 Redis:del(Themodrenv3.."modrenv3:Name:Bot") 
 return LuaTele.sendText(msg_chat_id,msg_id,"🛡 ¦ تم حذف اسم البوت ","md",true)   
 end
-if text == (Redis:get(Themodrenv3.."modrenv3:Name:Bot") or "بلاك بينك") then
-local NamesBot = (Redis:get(Themodrenv3.."modrenv3:Name:Bot") or "بلاك بينك")
+if text == (Redis:get(Themodrenv3.."modrenv3:Name:Bot") or "مودرن") then
+local NamesBot = (Redis:get(Themodrenv3.."modrenv3:Name:Bot") or "مودرن")
 local NameBots = {
-'مشغول حالياً ??🌸','لابسك لتلح','كول ضلعي','اي اني '..namesbot..' يالجريذي 😌','بعد جبدي كول 😎',
-'عمري فداك '..namesbot..' كول حب','كافي ترى كرهت اسمي 😤','اهو اجوا الملطلطين 😪😹',
-'ها حياتي😻','عيونه 👀 وخشمه 👃🏻واذانه👂🏻','اسمي مينو كول💘؟',
-'باقي ويتمدد 😎','ها حبي 😍','ها عمري 🌹','اجيت اجيت كافي لتصيح 🌚??',
-'هياتني اجيت 🌚❤️','نعم حبي 😎','هوه غير يسكت عاد ها شتريد 😷',
-'احجي بسرعه شتريد 😤','ها يا كلبي ❤️','هم صاحو عليه راح ابدل اسمي من وراكم 😡','دا اشرب جاي مفارغلك',
-'لك فداك '..namesbot..' حبيبي انت اموووح 💋','دا اشرب جاي تعال غير وكت 😌','كول حبيبي أمرني 😍',
-'احجي فضني شرايد ولا اصير ضريف ودكلي جرايد لو مجلات تره بايخه 😒😏',
-'اشتعلو اهل '..namesbot..' شتريد 😠','بووووووووو 👻 ها ها فزيت شفتك شفتك لا تحلف 😂',
-'طالع مموجود 😒','هااا شنوو اكو حاته بالكروب وصحت عليه  😍💕','انت مو قبل يومين غلطت عليه؟  😒',
-'تروح فدوه الأسمي الوصخ شتري؟ مولبارحه رزلتك يوميه ازلك شبيك😑😹','ياعيون '..namesbot..' أمرني 😍',
-'لك دبدل ملابسي اطلع برااااا 😵😡 ناس متستحي','سويت هواي شغلات سخيفه بحياتي بس عمري مصحت على واحد وكلتله انجب 😑',
-'مشغول ويا ضلعتي  ☺️','مازا تريد منه 😌🍃'
+"مشغول حالياً ??🌸","لابسك لتلح","كول ضلعي","اي اني "..NamesBot.." يالجريذي 😌","بعد جبدي كول 😎",
+"عمري فداك "..NamesBot.." كول حب","كافي ترى كرهت اسمي 😤","اهو اجوا الملطلطين 😪😹",
+"ها حياتي😻","عيونه 👀 وخشمه 👃🏻واذانه👂🏻","اسمي مينو كول💘؟",
+"باقي ويتمدد 😎","ها حبي 😍","ها عمري 🌹","اجيت اجيت كافي لتصيح 🌚??",
+"هياتني اجيت 🌚❤️","نعم حبي 😎","هوه غير يسكت عاد ها شتريد 😷",
+"احجي بسرعه شتريد 😤","ها يا كلبي ❤️","هم صاحو عليه راح ابدل اسمي من وراكم 😡","دا اشرب جاي مفارغلك",
+"لك فداك "..NamesBot.." حبيبي انت اموووح 💋","دا اشرب جاي تعال غير وكت 😌","كول حبيبي أمرني 😍",
+"احجي فضني شرايد ولا اصير ضريف ودكلي جرايد لو مجلات تره بايخه 😒😏",
+"اشتعلو اهل "..NamesBot.." شتريد 😠","بووووووووو 👻 ها ها فزيت شفتك شفتك لا تحلف 😂",
+"طالع مموجود 😒","هااا شنوو اكو حاته بالكروب وصحت عليه  😍💕","انت مو قبل يومين غلطت عليه؟  😒",
+"تروح فدوه الأسمي الوصخ شتري؟ مولبارحه رزلتك يوميه ازلك شبيك😑😹","ياعيون "..NamesBot.." أمرني 😍",
+"لك دبدل ملابسي اطلع برااااا 😵😡 ناس متستحي","سويت هواي شغلات سخيفه بحياتي بس عمري مصحت على واحد وكلتله انجب 😑",
+"مشغول ويا ضلعتي  ☺️","مازا تريد منه 😌🍃"
 }
 return LuaTele.sendText(msg_chat_id,msg_id, NameBots[math.random(#NameBots)],"md",true)  
 end
 if text == "بوت" then
-local NamesBot = (Redis:get(Themodrenv3.."modrenv3:Name:Bot") or "بلاك بينك")
+local NamesBot = (Redis:get(Themodrenv3.."modrenv3:Name:Bot") or "مودرن")
 local BotName = {
 "باوع لك خليني احبك وصيحلي باسمي "..NamesBot,
 "لتخليني ارجع لحركاتي لقديمه وردا ترا اسمي "..NamesBot.. "",
@@ -10450,7 +10420,7 @@ end
 end
 if text == "سمايلات" or text == "سمايل" then
 if Redis:get(Themodrenv3.."modrenv3:Status:Games"..msg.chat_id) then
-Random = {"🍏","🍎","🍐","🍊","🍋","🍉","🍇","🍓","🍈","🍒","🍑","🍍","🥥","🥝","🍅","🍆","🥑","🥦","🥒","🌶","🌽","🥕","🥔","🥖","🥐","🍞","🥨","🍟","🧀","🥚","🍳","🥓","🥩","🍗","🍖","🌭","🍔","🍠","🍕","🥪","🥙","☕️","🥤","🍶","🍺","🍻","🏀","⚽️","🏈","⚾️","🎾","🏐","🏉","🎱","🏓","🏸","🥅","🎰","🎮","🎳","🎯","🎲","🎻","🎸","🎺","🥁","🎹","🎼","🎧","🎤","🎬","🎨","🎭","🎪","🎟","🎫","🎗","🏵","🎖","🏆","🥌","🛷","🚗","🚌","🏎","🚓","🚑","🚚","🚛","🚜","⚔","🛡","🔮","🌡","💣","⌔","📍","📓","📗","📂","📅","📪","📫","⌔","📭","⏰","📺","🎚","☎️","📡"}
+Random = {"🍏","🍎","🍐","🍊","🍋","🍉","🍇","🍓","🍈","🍒","🍑","🍍","🥥","🥝","🍅","🍆","🥑","🥦","🥒","🌶","🌽","🥕","🥔","🥖","🥐","🍞","🥨","🍟","🧀","🥚","🍳","🥓","🥩","🍗","🍖","🌭","🍔","🍠","🍕","🥪","🥙","☕️","🥤","🍶","🍺","🍻","🏀","⚽️","🏈","⚾️","🎾","🏐","🏉","??","🏓","🏸","🥅","🎰","🎮","🎳","🎯","🎲","🎻","🎸","🎺","🥁","🎹","🎼","🎧","🎤","🎬","🎨","🎭","🎪","🎟","🎫","🎗","🏵","🎖","🏆","🥌","🛷","🚗","🚌","🏎","🚓","🚑","🚚","🚛","🚜","⚔","🛡","🔮","🌡","💣","⚡","📍","📓","📗","📂","📅","📪","📫","⚡","📭","⏰","📺","🎚","☎️","📡"}
 SM = Random[math.random(#Random)]
 Redis:set(Themodrenv3.."modrenv3:Game:Smile"..msg.chat_id,SM)
 return LuaTele.sendText(msg_chat_id,msg_id,"🛡 ¦ اسرع واحد يدز هاذا السمايل ? ~ {`"..SM.."`}","md",true)  
@@ -11302,7 +11272,7 @@ end
 
 end -- GroupBot
 if chat_type(msg.chat_id) == "UserBot" then 
-if text == 'تحديث الملفات ⌔' or text == 'تحديث' then
+if text == 'تحديث الملفات ⚡' or text == 'تحديث' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11319,7 +11289,7 @@ if text == '/start' then
 Redis:sadd(Themodrenv3..'modrenv3:Num:User:Pv',msg.sender.user_id)  
 if not msg.ControllerBot then
 if not Redis:get(Themodrenv3.."modrenv3:Start:Bot") then
-local CmdStart = '*\n🛡 ¦ أهلآ بك في بوت '..(Redis:get(Themodrenv3.."modrenv3:Name:Bot") or "بلاك بينك")..
+local CmdStart = '*\n🛡 ¦ أهلآ بك في بوت '..(Redis:get(Themodrenv3.."modrenv3:Name:Bot") or "مودرن")..
 '\n🛡 ¦ اختصاص البوت حماية المجموعات'..
 '\n🛡 ¦ لتفعيل البوت عليك اتباع مايلي ...'..
 '\n🛡 ¦ اضف البوت الى مجموعتك'..
@@ -11329,9 +11299,6 @@ local CmdStart = '*\n🛡 ¦ أهلآ بك في بوت '..(Redis:get(Themodrenv3
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
-{
-{text = '🛡 السورس .', url = 't.me/ke565'},{text = '🛡 لتنصيب بوت .', url = 't.me/ke565'}, 
-},
 {
 {text = '🛡 اضفني في مجموعتك .', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
@@ -11343,9 +11310,6 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '🛡 السورس .', url = 't.me/ke565'},{text = '🛡 لتنصيب بوت .', url = 't.me/ke565'}, 
-},
-{
 {text = '🛡 اضفني في مجموعتك .', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 }
@@ -11356,64 +11320,64 @@ else
 local reply_markup = LuaTele.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
 data = {
 {
-{text = 'تفعيل التواصل ⌔',type = 'text'},{text = 'تعطيل التواصل ⌔', type = 'text'},
+{text = 'تفعيل التواصل ⚡',type = 'text'},{text = 'تعطيل التواصل ⚡', type = 'text'},
 },
 {
-{text = 'تفعيل البوت الخدمي ⌔',type = 'text'},{text = 'تعطيل البوت الخدمي ⌔', type = 'text'},
+{text = 'تفعيل البوت الخدمي ⚡',type = 'text'},{text = 'تعطيل البوت الخدمي ⚡', type = 'text'},
 },
 {
-{text = 'اذاعه للمجموعات ⌔',type = 'text'},{text = 'اذاعه خاص ⌔', type = 'text'},
+{text = 'اذاعه للمجموعات ⚡',type = 'text'},{text = 'اذاعه خاص ⚡', type = 'text'},
 },
 {
-{text = 'اذاعه بالتوجيه ⌔',type = 'text'},{text = 'اذاعه بالتوجيه خاص ⌔', type = 'text'},
+{text = 'اذاعه بالتوجيه ⚡',type = 'text'},{text = 'اذاعه بالتوجيه خاص ⚡', type = 'text'},
 },
 {
-{text = 'اذاعه بالتثبيت ⌔',type = 'text'},
+{text = 'اذاعه بالتثبيت ⚡',type = 'text'},
 },
 {
-{text = 'المطورين الثانويين ⌔',type = 'text'},{text = 'المطورين ⌔',type = 'text'},{text = 'قائمه العام ⌔', type = 'text'},
+{text = 'المطورين الثانويين ⚡',type = 'text'},{text = 'المطورين ⚡',type = 'text'},{text = 'قائمه العام ⚡', type = 'text'},
 },
 {
-{text = 'مسح المطورين الثانويين ⌔',type = 'text'},{text = 'مسح المطورين ⌔',type = 'text'},{text = 'مسح قائمه العام ⌔', type = 'text'},
+{text = 'مسح المطورين الثانويين ⚡',type = 'text'},{text = 'مسح المطورين ⚡',type = 'text'},{text = 'مسح قائمه العام ⚡', type = 'text'},
 },
 {
-{text = 'تغيير اسم البوت ⌔',type = 'text'},{text = 'حذف اسم البوت ⌔', type = 'text'},
+{text = 'تغيير اسم البوت ⚡',type = 'text'},{text = 'حذف اسم البوت ⚡', type = 'text'},
 },
 {
-{text = 'الاشتراك الاجباري ⌔',type = 'text'},{text = 'تغيير الاشتراك الاجباري ⌔',type = 'text'},
+{text = 'الاشتراك الاجباري ⚡',type = 'text'},{text = 'تغيير الاشتراك الاجباري ⚡',type = 'text'},
 },
 {
-{text = 'تفعيل الاشتراك الاجباري ⌔',type = 'text'},{text = 'تعطيل الاشتراك الاجباري ⌔',type = 'text'},
+{text = 'تفعيل الاشتراك الاجباري ⚡',type = 'text'},{text = 'تعطيل الاشتراك الاجباري ⚡',type = 'text'},
 },
 {
-{text = 'الاحصائيات ⌔',type = 'text'},{text = 'تغيير المطور الاساسي ⌔',type = 'text'},
+{text = 'الاحصائيات ⚡',type = 'text'},{text = 'تغيير المطور الاساسي ⚡',type = 'text'},
 },
 {
 {text = 'تعطيل المغادره',type = 'text'},{text = 'تفعيل المغادره',type = 'text'},
 },
 {
-{text = 'تغغير كليشه المطور ⌔',type = 'text'},{text = 'حذف كليشه المطور ⌔', type = 'text'},
+{text = 'تغغير كليشه المطور ⚡',type = 'text'},{text = 'حذف كليشه المطور ⚡', type = 'text'},
 },
 {
-{text = 'تغيير كليشه ستارت ⌔',type = 'text'},{text = 'حذف كليشه ستارت ⌔', type = 'text'},
+{text = 'تغيير كليشه ستارت ⚡',type = 'text'},{text = 'حذف كليشه ستارت ⚡', type = 'text'},
 },
 {
-{text = 'تنظيف المجموعات ⌔',type = 'text'},{text = 'تنظيف المشتركين ⌔', type = 'text'},
+{text = 'تنظيف المجموعات ⚡',type = 'text'},{text = 'تنظيف المشتركين ⚡', type = 'text'},
 },
 {
-{text = 'جلب النسخه الاحتياطيه ⌔',type = 'text'},{text = 'جلب نسخه الردود', type = 'text'},
+{text = 'جلب النسخه الاحتياطيه ⚡',type = 'text'},{text = 'جلب نسخه الردود', type = 'text'},
 },
 {
-{text = 'اضف رد عام ⌔',type = 'text'},{text = 'حذف رد عام ⌔', type = 'text'},
+{text = 'اضف رد عام ⚡',type = 'text'},{text = 'حذف رد عام ⚡', type = 'text'},
 },
 {
-{text = 'الردود العامه ⌔',type = 'text'},{text = 'مسح الردود العامه ⌔', type = 'text'},
+{text = 'الردود العامه ⚡',type = 'text'},{text = 'مسح الردود العامه ⚡', type = 'text'},
 },
 {
-{text = 'تحديث الملفات ⌔',type = 'text'},{text = 'تحديث السورس ⌔', type = 'text'},
+{text = 'تحديث الملفات ⚡',type = 'text'},{text = 'تحديث السورس ⚡', type = 'text'},
 },
 {
-{text = 'الغاء الامر ⌔',type = 'text'},
+{text = 'الغاء الامر ⚡',type = 'text'},
 },
 }
 }
@@ -11421,7 +11385,7 @@ return LuaTele.sendText(msg_chat_id,msg_id,'🛡 ¦  اهلا بك عزيزي ا
 end
 end
 
-if text == 'تنظيف المشتركين ⌔' then
+if text == 'تنظيف المشتركين ⚡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11445,7 +11409,7 @@ else
 return LuaTele.sendText(msg_chat_id,msg_id,'*🛡 ¦ العدد الكلي { '..#list..' }\n🛡 ¦ لم يتم العثور على وهميين*',"md")
 end
 end
-if text == 'تنظيف المجموعات ⌔' then
+if text == 'تنظيف المجموعات ⚡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11485,7 +11449,7 @@ else
 return LuaTele.sendText(msg_chat_id,msg_id,'*🛡 ¦ العدد الكلي { '..#list..' } للمجموعات \n🛡 ¦ لا توجد مجموعات وهميه*',"md")
 end
 end
-if text == 'تغيير كليشه ستارت ⌔' then 
+if text == 'تغيير كليشه ستارت ⚡' then 
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11496,7 +11460,7 @@ end
 Redis:setex(Themodrenv3.."modrenv3:Change:Start:Bot"..msg.sender.user_id,300,true) 
 return LuaTele.sendText(msg_chat_id,msg_id,"🛡 ¦  ارسل لي كليشه Start الان ","md",true)  
 end
-if text == 'حذف كليشه ستارت ⌔' then 
+if text == 'حذف كليشه ستارت ⚡' then 
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11507,7 +11471,7 @@ end
 Redis:del(Themodrenv3.."modrenv3:Start:Bot") 
 return LuaTele.sendText(msg_chat_id,msg_id,"🛡 ¦ تم حذف كليشه Start ","md",true)   
 end
-if text == 'تغيير اسم البوت ⌔' then 
+if text == 'تغيير اسم البوت ⚡' then 
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11518,7 +11482,7 @@ end
 Redis:setex(Themodrenv3.."modrenv3:Change:Name:Bot"..msg.sender.user_id,300,true) 
 return LuaTele.sendText(msg_chat_id,msg_id,"🛡 ¦  ارسل لي الاسم الان ","md",true)  
 end
-if text == 'حذف اسم البوت ⌔' then 
+if text == 'حذف اسم البوت ⚡' then 
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11549,7 +11513,7 @@ return LuaTele.sendText(msg.chat_id,msg.id,'*\n🛡 ¦ عليك الاشتراك
 end
 LuaTele.sendText(msg_chat_id,msg_id,'*🛡 ¦ عدد احصائيات البوت الكامله \n— — — — — — — — —\n🛡 ¦ عدد المجموعات : '..(Redis:scard(Themodrenv3..'modrenv3:ChekBotAdd') or 0)..'\n🛡 ¦ عدد المشتركين : '..(Redis:scard(Themodrenv3..'modrenv3:Num:User:Pv') or 0)..'*',"md",true)  
 end
-if text == 'تغغير كليشه المطور ⌔' then
+if text == 'تغغير كليشه المطور ⚡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11560,7 +11524,7 @@ end
 Redis:set(Themodrenv3..'modrenv3:GetTexting:DevThemodrenv3'..msg_chat_id..':'..msg.sender.user_id,true)
 return LuaTele.sendText(msg_chat_id,msg_id,'🛡 ¦  ارسل لي الكليشه الان')
 end
-if text == 'حذف كليشه المطور ⌔' then
+if text == 'حذف كليشه المطور ⚡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11571,7 +11535,7 @@ end
 Redis:del(Themodrenv3..'modrenv3:Texting:DevThemodrenv3')
 return LuaTele.sendText(msg_chat_id,msg_id,'🛡 ¦  تم حذف كليشه المطور')
 end
-if text == 'اضف رد عام ⌔' then 
+if text == 'اضف رد عام ⚡' then 
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11582,7 +11546,7 @@ end
 Redis:set(Themodrenv3.."modrenv3:Set:Rd"..msg.sender.user_id..":"..msg_chat_id,true)
 return LuaTele.sendText(msg_chat_id,msg_id,"🛡 ¦ ارسل الان الكلمه لاضافتها في ردود المطور ","md",true)  
 end
-if text == 'حذف رد عام ⌔' then 
+if text == 'حذف رد عام ⚡' then 
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11593,7 +11557,7 @@ end
 Redis:set(Themodrenv3.."modrenv3:Set:On"..msg.sender.user_id..":"..msg_chat_id,true)
 return LuaTele.sendText(msg_chat_id,msg_id,"🛡 ¦ ارسل الان الكلمه لحذفها من ردود المطور","md",true)  
 end
-if text=='اذاعه خاص ⌔' then 
+if text=='اذاعه خاص ⚡' then 
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11613,7 +11577,7 @@ LuaTele.sendText(msg_chat_id,msg_id,[[
 return false
 end
 
-if text=='اذاعه للمجموعات ⌔' then 
+if text=='اذاعه للمجموعات ⚡' then 
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11633,7 +11597,7 @@ LuaTele.sendText(msg_chat_id,msg_id,[[
 return false
 end
 
-if text=="اذاعه بالتثبيت ⌔" then 
+if text=="اذاعه بالتثبيت ⚡" then 
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11653,7 +11617,7 @@ LuaTele.sendText(msg_chat_id,msg_id,[[
 return false
 end
 
-if text=="اذاعه بالتوجيه ⌔" then 
+if text=="اذاعه بالتوجيه ⚡" then 
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11666,7 +11630,7 @@ LuaTele.sendText(msg_chat_id,msg_id,"🛡 ¦ ارسل لي التوجيه الا
 return false
 end
 
-if text=='اذاعه بالتوجيه خاص ⌔' then 
+if text=='اذاعه بالتوجيه خاص ⚡' then 
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11679,7 +11643,7 @@ LuaTele.sendText(msg_chat_id,msg_id,"🛡 ¦ ارسل لي التوجيه الا
 return false
 end
 
-if text == ("الردود العامه ⌔") then 
+if text == ("الردود العامه ⚡") then 
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11703,7 +11667,7 @@ db = "صوره 🎇"
 elseif Redis:get(Themodrenv3.."modrenv3:Add:Rd:Sudo:Video"..v) then
 db = "فيديو 📹"
 elseif Redis:get(Themodrenv3.."modrenv3:Add:Rd:Sudo:File"..v) then
-db = "ملف ⌔"
+db = "ملف ⚡"
 elseif Redis:get(Themodrenv3.."modrenv3:Add:Rd:Sudo:Audio"..v) then
 db = "اغنيه 🎵"
 elseif Redis:get(Themodrenv3.."modrenv3:Add:Rd:Sudo:video_note"..v) then
@@ -11716,7 +11680,7 @@ text = "🛡 ¦ لا توجد ردود للمطور"
 end
 return LuaTele.sendText(msg_chat_id,msg_id,"["..text.."]","md",true)  
 end
-if text == ("مسح الردود العامه ⌔") then 
+if text == ("مسح الردود العامه ⚡") then 
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11739,7 +11703,7 @@ Redis:del(Themodrenv3.."modrenv3:List:Rd:Sudo")
 end
 return LuaTele.sendText(msg_chat_id,msg_id,"🛡 ¦ تم حذف ردود المطور","md",true)  
 end
-if text == 'مسح المطورين ⌔' then
+if text == 'مسح المطورين ⚡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11754,7 +11718,7 @@ end
 Redis:del(Themodrenv3.."modrenv3:Developers:Groups") 
 return LuaTele.sendText(msg_chat_id,msg_id,"*🛡 ¦ تم مسح {"..#Info_Members.."} من المطورين *","md",true)
 end
-if text == 'مسح المطورين الثانويين ⌔' then
+if text == 'مسح المطورين الثانويين ⚡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11769,7 +11733,7 @@ end
 Redis:del(Themodrenv3.."modrenv3:DevelopersQ:Groups") 
 return LuaTele.sendText(msg_chat_id,msg_id,"*🛡 ¦ تم مسح {"..#Info_Members.."} من المطورين *","md",true)
 end
-if text == 'مسح قائمه العام ⌔' then
+if text == 'مسح قائمه العام ⚡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11784,7 +11748,7 @@ end
 Redis:del(Themodrenv3.."modrenv3:BanAll:Groups") 
 return LuaTele.sendText(msg_chat_id,msg_id,"*🛡 ¦ تم مسح {"..#Info_Members.."} من المحظورين عام *","md",true)
 end
-if text == 'تعطيل البوت الخدمي ⌔' then
+if text == 'تعطيل البوت الخدمي ⚡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11795,7 +11759,7 @@ end
 Redis:del(Themodrenv3.."modrenv3:BotFree") 
 return LuaTele.sendText(msg_chat_id,msg_id,"🛡 ¦ تم تعطيل البوت الخدمي ","md",true)
 end
-if text == 'تعطيل التواصل ⌔' then
+if text == 'تعطيل التواصل ⚡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11806,7 +11770,7 @@ end
 Redis:del(Themodrenv3.."modrenv3:TwaslBot") 
 return LuaTele.sendText(msg_chat_id,msg_id,"🛡 ¦ تم تعطيل التواصل داخل البوت ","md",true)
 end
-if text == 'تفعيل البوت الخدمي ⌔' then
+if text == 'تفعيل البوت الخدمي ⚡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11817,7 +11781,7 @@ end
 Redis:set(Themodrenv3.."modrenv3:BotFree",true) 
 return LuaTele.sendText(msg_chat_id,msg_id,"🛡 ¦ تم تفعيل البوت الخدمي ","md",true)
 end
-if text == 'تفعيل التواصل ⌔' then
+if text == 'تفعيل التواصل ⚡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11828,7 +11792,7 @@ end
 Redis:set(Themodrenv3.."modrenv3:TwaslBot",true) 
 return LuaTele.sendText(msg_chat_id,msg_id,"🛡 ¦ تم تفعيل التواصل داخل البوت ","md",true)
 end
-if text == 'قائمه العام ⌔' then
+if text == 'قائمه العام ⚡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end 
@@ -11855,7 +11819,7 @@ type = 'inline',
 data = {{{text = '- مسح المحظورين عام', data = msg.sender.user_id..'/BanAll'},},}}
 return LuaTele.sendText(msg_chat_id, msg_id, ListMembers, 'md', false, false, false, false, reply_markup)
 end
-if text == 'المطورين ⌔' then
+if text == 'المطورين ⚡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11881,7 +11845,7 @@ type = 'inline',
 data = {{{text = '- مسح المطورين', data = msg.sender.user_id..'/Developers'},},}}
 return LuaTele.sendText(msg_chat_id, msg_id, ListMembers, 'md', false, false, false, false, reply_markup)
 end
-if text == 'المطورين الثانويين ⌔' then
+if text == 'المطورين الثانويين ⚡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -12183,9 +12147,6 @@ keyboard.inline_keyboard = {
 {
 {text = ': مره اخرى 🔃.', callback_data = IdUser..'/Re@'},
 },
-{
-{text = '❲ MoDreN ❳',url="t.me/ke565"}
-},
 }
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ChatId .. '&voice=https://t.me/adman0/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 LuaTele.deleteMessages(ChatId,{[1]= Msg_id})
@@ -12461,9 +12422,6 @@ data = {
 {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
-{
-{text = '- قناة السورس', url = 't.me/ke565'}, 
-},
 }
 }
 local TextHelp = [[*
@@ -12518,9 +12476,6 @@ data = {
 },
 {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
-},
-{
-{text = '- قناة السورس', url = 't.me/ke565'}, 
 },
 }
 }
@@ -12578,9 +12533,6 @@ data = {
 {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
-{
-{text = '- قناة السورس', url = 't.me/ke565'}, 
-},
 }
 }
 local TextHelp = [[*
@@ -12588,7 +12540,7 @@ local TextHelp = [[*
 — — — — — — — — —
 🛡 ¦ رفع ، تنزيل » ادمن
 🛡 ¦ الادمنيه 
-⌔️ ¦ رفع، كشف » القيود
+⚡️ ¦ رفع، كشف » القيود
 🛡 ¦ تنزيل الكل » { بالرد ، بالمعرف }
 — — — — — — — — —
 🛡 ¦ لتغيير رد الرتب في البوت
@@ -12631,9 +12583,6 @@ data = {
 {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
-{
-{text = '- قناة السورس', url = 't.me/ke565'}, 
-},
 }
 }
 local TextHelp = [[*
@@ -12670,9 +12619,6 @@ data = {
 },
 {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
-},
-{
-{text = '- قناة السورس', url = 't.me/ke565'}, 
 },
 }
 }
@@ -12726,9 +12672,6 @@ data = {
 {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
-{
-{text = '- قناة السورس', url = 't.me/ke565'}, 
-},
 }
 }
 local TextHelp = [[*
@@ -12766,9 +12709,6 @@ data = {
 },
 {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
-},
-{
-{text = '- قناة السورس', url = 't.me/ke565'}, 
 },
 }
 }
@@ -13720,7 +13660,7 @@ data = {
 {text = 'تعطيل الترحيب', data = IdUser..'/'.. 'unmute_welcome'},{text = 'تفعيل الترحيب', data = IdUser..'/'.. 'mute_welcome'},
 },
 {
-{text = 'اتعطيل الايدي', data = IdUser..'/'.. 'unmute_Id'},{text = 'اتفعيل الايدي', data = IdUser..'/'.. 'mute_Id'},
+{text = 'اتعطيل الايدي', data = IdUser..'/'.. 'unmute_Id'},{text = 'تفعيل الايدي', data = IdUser..'/'.. 'mute_Id'},
 },
 {
 {text = 'تعطيل الايدي بالصوره', data = IdUser..'/'.. 'unmute_IdPhoto'},{text = 'تفعيل الايدي بالصوره', data = IdUser..'/'.. 'mute_IdPhoto'},
@@ -13985,10 +13925,10 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {
 {text = 'قفل الملفات', data =UserId..'/'.. 'lock_files'},{text = 'قفل الملفات بالكتم', data =UserId..'/'.. 'lock_filesktm'},
 },
 {
-{text = 'قفل النلفات بالطرد', data =UserId..'/'.. 'lock_fileskick'},{text = 'قفل الملقات بالتقييد', data =UserId..'/'.. 'lock_fileskid'},
+{text = 'قفل الملفات بالطرد', data =UserId..'/'.. 'lock_fileskick'},{text = 'قفل الملفات بالتقييد', data =UserId..'/'.. 'lock_fileskid'},
 },
 {
-{text = 'فتح الملقات', data =UserId..'/'.. 'unlock_files'},
+{text = 'فتح الملفات', data =UserId..'/'.. 'unlock_files'},
 },
 {
 {text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},
