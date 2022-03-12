@@ -11734,6 +11734,98 @@ if text == 'مسح المطورين 🛡' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*🛡 ¦ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
+if text == 'الملفات' then
+if not msg.ControllerBot then 
+t = '📮| ملفات السورس نينجا ↓\n ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ء \n'
+i = 0
+for v in io.popen('ls File_Bot'):lines() do
+if v:match(".lua$") then
+i = i + 1
+t = t..i..'- الملف ← {'..v..'}\n'
+end
+end
+send(msg.chat_id_, msg.id_,t)
+end
+if text == "متجر الملفات" or text == 'المتجر' then
+if not msg.ControllerBot then 
+local Get_Files, res = https.request("https://raw.githubusercontent.com/sourceninjaiq/Files_ninjaIQ/master/getfile.json")
+if res == 200 then
+local Get_info, res = pcall(JSON.decode,Get_Files);
+vardump(res.plugins_)
+if Get_info then
+local TextS = "\n📁| اهلا بك في متجر ملفات نينجا\n🔰| ملفات السورس ↓\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n\n"
+local TextE = "\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n🔘|  علامة تعني { ✓ } ملف مفعل\n🔘| علامة تعني { ✘ } ملف معطل\n🔖| قناة سورس نينجا ↓\n".."📮| [اضغط هنا لدخول](t.me/ChannelNinjaBOT) \n"
+local NumFile = 0
+for name,Info in pairs(res.plugins_) do
+local Check_File_is_Found = io.open("File_Bot/"..name,"r")
+if Check_File_is_Found then
+io.close(Check_File_is_Found)
+CeckFile = "(✓)"
+else
+CeckFile = "(✘)"
+end
+NumFile = NumFile + 1
+TextS = TextS..'*'..NumFile.."→* {`"..name..'`} » '..CeckFile..'\n[-Information]('..Info..')\n'
+end
+send(msg.chat_id_, msg.id_,TextS..TextE) 
+end
+else
+send(msg.chat_id_, msg.id_,"🔰| لا يوجد اتصال من ال api \n") 
+end
+return false
+end
+end
+
+if text and text:match("^(تعطيل) (.*)(.lua)$") then
+if not msg.ControllerBot then
+local name_t = {string.match(text, "^(تعطيل) (.*)(.lua)$")}
+local file = name_t[2]..'.lua'
+local file_bot = io.open("File_Bot/"..file,"r")
+if file_bot then
+io.close(file_bot)
+t = "📁| الملف ← "..file.."\n🔰| تم تعطيل ملف \n"
+else
+t = "🔖| بالتاكيد تم تعطيل ملف → "..file.."\n"
+end
+local json_file, res = https.request("https://raw.githubusercontent.com/sourceninjaiq/Files_ninjaIQ/master/File_Bot/"..file)
+if res == 200 then
+os.execute("rm -fr File_Bot/"..file)
+send(msg.chat_id_, msg.id_,t) 
+dofile('ninja9.lua')  
+else
+send(msg.chat_id_, msg.id_,"⚠️| عذرا هاذا ملف ليس من ملفات سورس نينجا\n") 
+end
+return false
+end
+if text and text:match("^(تفعيل) (.*)(.lua)$") then
+if not msg.ControllerBot then 
+local name_t = {string.match(text, "^(تفعيل) (.*)(.lua)$")}
+local file = name_t[2]..'.lua'
+local file_bot = io.open("File_Bot/"..file,"r")
+if file_bot then
+io.close(file_bot)
+t = "🔖| بالتاكيد تم تفعيل ملف → "..file.." \n"
+else
+t = "📁| الملف ← "..file.."\n🔰| تم تفعيل ملف \n"
+end
+local json_file, res = https.request("https://raw.githubusercontent.com/sourceninjaiq/Files_ninjaIQ/master/File_Bot/"..file)
+if res == 200 then
+local chek = io.open("File_Bot/"..file,'w+')
+chek:write(json_file)
+chek:close()
+send(msg.chat_id_, msg.id_,t) 
+dofile('ninja9.lua')  
+else
+send(msg.chat_id_, msg.id_,"⚠️|  عذرا هاذا ملف ليس من ملفات سورس نينجا\n") 
+end
+return false
+end
+if text == "مسح الملفات" then
+if not msg.ControllerBot then 
+os.execute("rm -fr File_Bot/*")
+send(msg.chat_id_,msg.id_,"🔖| تم مسح الملفات")
+return false
+end
 if ChannelJoin(msg) == false then
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/'..Redis:get(Themodrenv3..'modrenv3:Channel:Join')}, },}}
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n🛡 ¦ عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)

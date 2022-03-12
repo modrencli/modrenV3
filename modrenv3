@@ -1,10 +1,13 @@
 #!/bin/bash
+echo -e "\e[1;91m By Source modren\e[0m"
 cd $(cd $(dirname $0); pwd)
 echo -e '\e[1m\e[31m
 modrenv3 source is being installed, 
 Please wait until the installation is complete
 \033[0m'
 echo -e '\033[0;33m
+                         MoDreN PRo source 
+                                 version  : 3.0
 If it is the first time to install the source, send the number » {1}
 or اذا كانت اول مره تنصيب السورس ارسل رقم » {1}
 If you have already installed the source, send the number » {2}
