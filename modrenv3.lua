@@ -8432,6 +8432,7 @@ local protectionGroup = '\n*🛡 ¦ اعدادات حمايه المجموعه\n
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
+}
 },
 }
 }
