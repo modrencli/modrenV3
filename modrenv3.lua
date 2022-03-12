@@ -597,7 +597,6 @@ MsgText = 'Good PRo ⚡'
 end 
 return MsgText 
 end
-
 function Getpermissions(ChatId)
 local Get_Chat = LuaTele.getChat(ChatId)
 if Get_Chat.permissions.can_add_web_page_previews then
