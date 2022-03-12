@@ -6,7 +6,7 @@ modrenv3 source is being installed,
 Please wait until the installation is complete
 \033[0m'
 echo -e '\033[0;33m
-                         MoDreN PRo source 
+                             MoDreN PRo source 
                                  version  : 3.0
 If it is the first time to install the source, send the number » {1}
 or اذا كانت اول مره تنصيب السورس ارسل رقم » {1}
