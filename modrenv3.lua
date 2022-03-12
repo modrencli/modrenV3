@@ -1,4 +1,4 @@
-------------------------------------------------
+-----------------------------------------------
 -- This Source Was Developed By (MoDreN) @ke565.--
 --   This Is The Source Channel @ke565 .   --
 --                - modrenv3-                 --
@@ -9,6 +9,7 @@ JSON    = require("./nods/dkjson")
 serpent = require("nods/serpent")
 json = require('nods/json')
 Redis = require('nods/redis').connect('127.0.0.1', 6379)
+id_server = 2342443
 http  = require("socket.http")
 https   = require("ssl.https")
 local Methods = io.open("./luatele.lua","r")
@@ -143,6 +144,13 @@ Status = false
 end
 return Status
 end
+--------------------------------------------------------------------------------------------------------------
+--  ▄█▀█▄──▄███▄ ChanNel @ke565
+--▐█░███MoDreN██  Developer @Vv02vV
+-- ██▒█████████    MoDrEN PRo
+--     ▀████████▀
+--              ▀██▀
+--------------------------------------------------------------------------------------------------------------
 function Controller(ChatId,UserId)
 Status = 0
 Developers = Redis:sismember(Themodrenv3.."modrenv3:Developers:Groups",UserId) 
