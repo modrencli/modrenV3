@@ -8432,8 +8432,6 @@ local protectionGroup = '\n*🛡 ¦ اعدادات حمايه المجموعه\n
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
-{
-{text = '- قناة السورس', url = 't.me/ke565'}, 
 },
 }
 }
@@ -9941,9 +9939,6 @@ data = {
 },
 {
 {text = 'اوامر القفل الفتح', data = msg.sender.user_id..'/NoNextSeting'}, {text = '  اوامر التعطيل التفعيل  ', data = msg.sender.user_id..'/listallAddorrem'}, 
-},
-{
-{text = '- قناة السورس', url = 't.me/ke565'}, 
 },
 }
 }
